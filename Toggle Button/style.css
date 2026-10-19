@@ -1,0 +1,65 @@
+button{
+    height: 22px;
+    width: 22px;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px black;
+}
+
+div{
+    width: 60px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    top: -22.53px;
+    z-index: 0;
+}
+
+button.dark{
+    height: 22px;
+    width: 22px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    transform: translateX(42px) rotateZ(180deg);
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+div.dark{
+    width: 60px;
+    height: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    top: -22.53px;
+    z-index: 0;
+}
+
+
+button.light{
+    height: 22px;
+    width: 22px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    transform: translateX(0px);
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px black;
+}
+
+div.light{
+    width: 60px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    top: -22.53px;
+    z-index: 0;
+}
