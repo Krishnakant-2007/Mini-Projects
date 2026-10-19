@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    min-height: 98vh;
+    background: linear-gradient(135deg, #172554, #7c3aed, #22d3ee);
+}
+
+.game-name {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    /* clamp(minimum, preffered, maximum) */
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 10px;
+
+    color: #ffffff;
+    text-shadow: 0 0 5px #22d3ee, 0 0 15px #22d3ee, 0 0 30px #7c3aed;
+}
+
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    gap: clamp(12px, 4vw, 50px);
+    padding: 20px;
+}
+
+.choice {
+    width: clamp(85px, 18vw, 160px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.choice:hover{
+    transform: translateY(-20px);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+    height: 25vh;
+    /* border: 2px solid red; */
+}
+
+.player-score {
+    font-family: "poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(1, 253, 1);
+    text-shadow:
+        0 0 10px rgb(1, 253, 1),
+        0 0 25px rgb(1, 253, 1),
+        0 0 45px rgb(1, 253, 1);
+}
+
+.comp-score {
+    font-family: "poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: red;
+    text-shadow:
+        0 0 10px rgb(253, 1, 1),
+        /* 0 0 25px rgb(253, 1, 1), */
+        0 0 45px rgb(253, 1, 1);
+}
+
+.c-score {
+    font-size: 4rem;
+}
+
+.p-score {
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ready {
+    display: inline-block;
+    max-width: calc(100% - 32px);
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 4vw, 2rem);
+
+    margin-top: 4rem;
+    padding: 1.5rem 2rem;
+
+    background-color: #7940e2;
+    border-radius: 3rem;
+    color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 55);
+}
+
+
+/* 1. Define the animation separately */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-30px);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    75% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 2. Run animation only when the select class exists */
+.ready.select {
+    animation: shake 0.3s ease-in-out;
+}
+
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .choices {
+        min-height: 30vh;
+        gap: clamp(15px, 4vw, 30px);
+        padding: 15px;
+    }
+
+    .choice {
+        width: clamp(85px, 20vw, 140px);
+    }
+
+    .score-board {
+        gap: 15vw;
+        height: 22vh;
+        margin-top: -7rem;
+    }
+
+    .p-score,
+    .c-score {
+        font-size: 3rem;
+    }
+
+    .ready {
+        margin-top: 2.5rem;
+        padding: 1.2rem 1.5rem;
+        border-radius: 2rem;
+    }
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    .game-name {
+        margin-top: 1.5rem;
+        font-size: clamp(1.3rem, 6vw, 1.7rem);
+        padding: 0 8px;
+    }
+
+    .choices {
+        min-height: 25vh;
+        gap: clamp(8px, 3vw, 15px);
+        padding: 12px 8px;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        width: clamp(80px, 26vw, 115px);
+    }
+
+    .score-board {
+        height: auto;
+        min-height: 20vh;
+        gap: 20vw;
+        margin-top: 3rem;
+    }
+
+    .p-score,
+    .c-score {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1rem, 4vw, 1.3rem);
+    }
+
+    .ready {
+        display: block;
+        width: fit-content;
+        max-width: calc(100% - 24px);
+        margin: 6rem auto 0;
+        padding: 1rem 1.2rem;
+        font-size: clamp(0.85rem, 4vw, 1.1rem);
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+        border-radius: 1.5rem;
+    }
+}
+
+
+/* ===== VERY SMALL MOBILE SCREENS ===== */
+@media (max-width: 350px) {
+    .choices {
+        gap: 6px;
+        padding: 10px 4px;
+    }
+
+    .choice {
+        width: 28vw;
+    }
+
+    .score-board {
+        gap: 15vw;
+    }
+
+    .ready {
+        padding: 0.8rem;
+    }
+}
