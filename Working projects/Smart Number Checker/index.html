@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Smart Number Checker</h1>
+        </div>
+        <div class="input">
+            <input type="number" name="number" id="number" placeholder="Enter a number">
+        </div>
+        <!-- <div class="button-box">
+            <button class="button">Check</button>
+        </div> -->
+    </div>
+    <div class="result-container hidden">
+        <div class="analysis">
+            <h3>Analysis Result...</h3>
+        </div>
+        <div class="results">
+            <div class="result">
+                <div class="num-type">Number type</div>
+                <div class="num-type-soln"></div>
+            </div>
+            <div class="result">
+                <div class="even-odd">Even/Odd</div>
+                <div class="even-odd-soln"></div>
+            </div>
+            <div class="result">
+                <div class="div-by-5">Divisible by 5</div>
+                <div class="div-by-5-soln"></div>
+            </div>
+            <div class="result">
+                <div class="div-by-3">Divisible by 3</div>
+                <div class="div-by-3-soln"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 4vw;
+    width: 100vw;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: larger;
+}
+
+.logo {
+    height: 3vw;
+}
+
+.cart {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-icon1 {
+    height: 1.5vw;
+}
+
+.big-img {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(assets/kw-background.png);
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.collection-page {
+    /* border: 2px solid black; */
+    margin: 8rem 4rem 4rem;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.collection1 {
+    margin-top: 20px;
+    display: flex;
+    /* gap: 5rem; */
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+.book {
+    height: 15vw;
+    width: 10vw;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.author {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -2px;
+    font-size: smaller;
+    color: rgb(120, 120, 120);
+}
+
+.Add {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+
+    height: 3vw;
+    width: 5vw;
+    background-color: rgb(85, 85, 253);
+    color: white;
+
+    border-radius: 0.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.rate {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.info {
+    display: flex;
+    width: 10vw;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.book2 {
+    height: 15vw;
+    /* width: 15vw; */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book2:hover {
+    transform: scale(1.05);
+}
+
+.info2 {
+    display: flex;
+    width: 16vw;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.cart2 {
+    height: 1.5vw;
+}
+
+.text {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    color: white;
+
+    line-height: 5rem;
+
+    font-size: 3rem;
+}
+
+.text2 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    color: white;
+
+    font-size: 1rem;
+}
+
+.text-box{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 3vw;
+}
