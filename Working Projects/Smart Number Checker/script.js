@@ -4,6 +4,7 @@ let numType = document.querySelector(".num-type-soln")
 let evenOdd = document.querySelector(".even-odd-soln")
 let div5 = document.querySelector(".div-by-5-soln")
 let div3 = document.querySelector(".div-by-3-soln")
+let isPrime = document.querySelector(".prime-soln")
 let resultContainer = document.querySelector(".result-container")
 
 // button.addEventListener("click", () => {
@@ -78,6 +79,22 @@ number.addEventListener("input", () => {
         div3.innerText = "Yes"
     } else {
         div3.innerText = "No"
+    }
+
+    {
+        let s = 0
+        for (let i = 1; i <= input; i++) {
+            if (input % i === 0) {
+                s += 1
+            } else {
+                s += 0
+            }
+        }
+        if(s===2){
+            isPrime.innerText = "Yes"
+        }else{
+            isPrime.innerText = "No"
+        }
     }
 
     resultContainer.classList.remove("hidden")
