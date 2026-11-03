@@ -1,7 +1,7 @@
 let body = document.querySelector("body")
 let btn = document.querySelector("button")
 let div = document.querySelector("div")
-let currMode = "Ligh"
+let currMode = "Light"
 
 
 btn.addEventListener("click", () => {
